@@ -1,0 +1,31 @@
+import { ElementRef, EventEmitter } from "@angular/core";
+import { CanvasWhiteboardShapeService, INewCanvasWhiteboardShape } from "./canvas-whiteboard-shape.service";
+import { CanvasWhiteboardShape } from "./canvas-whiteboard-shape";
+import { CanvasWhiteboardShapeOptions } from "./canvas-whiteboard-shape-options";
+import { Observable } from "rxjs";
+import * as ɵngcc0 from '@angular/core';
+export declare class CanvasWhiteboardShapeSelectorComponent {
+    private _elementRef;
+    private _canvasWhiteboardShapeService;
+    readonly showShapeSelector: boolean;
+    readonly selectedShapeConstructor: INewCanvasWhiteboardShape<CanvasWhiteboardShape>;
+    readonly shapeOptions: CanvasWhiteboardShapeOptions;
+    onToggleShapeSelector: EventEmitter<boolean>;
+    onShapeSelected: EventEmitter<INewCanvasWhiteboardShape<CanvasWhiteboardShape>>;
+    registeredShapes$: Observable<INewCanvasWhiteboardShape<CanvasWhiteboardShape>[]>;
+    constructor(_elementRef: ElementRef, _canvasWhiteboardShapeService: CanvasWhiteboardShapeService);
+    selectShape(shape: INewCanvasWhiteboardShape<CanvasWhiteboardShape>): void;
+    closeOnExternalClick(event: any): void;
+    toggleShapeSelector(event: Event): void;
+    static ɵfac: ɵngcc0.ɵɵFactoryDef<CanvasWhiteboardShapeSelectorComponent>;
+    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<CanvasWhiteboardShapeSelectorComponent, "canvas-whiteboard-shape-selector", never, {
+    "showShapeSelector": "showShapeSelector";
+    "selectedShapeConstructor": "selectedShapeConstructor";
+    "shapeOptions": "shapeOptions";
+}, {
+    "onToggleShapeSelector": "onToggleShapeSelector";
+    "onShapeSelected": "onShapeSelected";
+}, never>;
+}
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY2FudmFzLXdoaXRlYm9hcmQtc2hhcGUtc2VsZWN0b3IuY29tcG9uZW50LmQudHMiLCJzb3VyY2VzIjpbImNhbnZhcy13aGl0ZWJvYXJkLXNoYXBlLXNlbGVjdG9yLmNvbXBvbmVudC5kLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7QUFLQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQWFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgRWxlbWVudFJlZiwgRXZlbnRFbWl0dGVyIH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IENhbnZhc1doaXRlYm9hcmRTaGFwZVNlcnZpY2UsIElOZXdDYW52YXNXaGl0ZWJvYXJkU2hhcGUgfSBmcm9tIFwiLi9jYW52YXMtd2hpdGVib2FyZC1zaGFwZS5zZXJ2aWNlXCI7XG5pbXBvcnQgeyBDYW52YXNXaGl0ZWJvYXJkU2hhcGUgfSBmcm9tIFwiLi9jYW52YXMtd2hpdGVib2FyZC1zaGFwZVwiO1xuaW1wb3J0IHsgQ2FudmFzV2hpdGVib2FyZFNoYXBlT3B0aW9ucyB9IGZyb20gXCIuL2NhbnZhcy13aGl0ZWJvYXJkLXNoYXBlLW9wdGlvbnNcIjtcbmltcG9ydCB7IE9ic2VydmFibGUgfSBmcm9tIFwicnhqc1wiO1xuZXhwb3J0IGRlY2xhcmUgY2xhc3MgQ2FudmFzV2hpdGVib2FyZFNoYXBlU2VsZWN0b3JDb21wb25lbnQge1xuICAgIHByaXZhdGUgX2VsZW1lbnRSZWY7XG4gICAgcHJpdmF0ZSBfY2FudmFzV2hpdGVib2FyZFNoYXBlU2VydmljZTtcbiAgICByZWFkb25seSBzaG93U2hhcGVTZWxlY3RvcjogYm9vbGVhbjtcbiAgICByZWFkb25seSBzZWxlY3RlZFNoYXBlQ29uc3RydWN0b3I6IElOZXdDYW52YXNXaGl0ZWJvYXJkU2hhcGU8Q2FudmFzV2hpdGVib2FyZFNoYXBlPjtcbiAgICByZWFkb25seSBzaGFwZU9wdGlvbnM6IENhbnZhc1doaXRlYm9hcmRTaGFwZU9wdGlvbnM7XG4gICAgb25Ub2dnbGVTaGFwZVNlbGVjdG9yOiBFdmVudEVtaXR0ZXI8Ym9vbGVhbj47XG4gICAgb25TaGFwZVNlbGVjdGVkOiBFdmVudEVtaXR0ZXI8SU5ld0NhbnZhc1doaXRlYm9hcmRTaGFwZTxDYW52YXNXaGl0ZWJvYXJkU2hhcGU+PjtcbiAgICByZWdpc3RlcmVkU2hhcGVzJDogT2JzZXJ2YWJsZTxJTmV3Q2FudmFzV2hpdGVib2FyZFNoYXBlPENhbnZhc1doaXRlYm9hcmRTaGFwZT5bXT47XG4gICAgY29uc3RydWN0b3IoX2VsZW1lbnRSZWY6IEVsZW1lbnRSZWYsIF9jYW52YXNXaGl0ZWJvYXJkU2hhcGVTZXJ2aWNlOiBDYW52YXNXaGl0ZWJvYXJkU2hhcGVTZXJ2aWNlKTtcbiAgICBzZWxlY3RTaGFwZShzaGFwZTogSU5ld0NhbnZhc1doaXRlYm9hcmRTaGFwZTxDYW52YXNXaGl0ZWJvYXJkU2hhcGU+KTogdm9pZDtcbiAgICBjbG9zZU9uRXh0ZXJuYWxDbGljayhldmVudDogYW55KTogdm9pZDtcbiAgICB0b2dnbGVTaGFwZVNlbGVjdG9yKGV2ZW50OiBFdmVudCk6IHZvaWQ7XG59XG4iXX0=

@@ -1,0 +1,7 @@
+/**
+ * Generated bundle index. Do not edit.
+ */
+export * from './index';
+export { LOCAL_STORAGE_SERVICE_CONFIG as ɵa } from './local-storage.config.interface';
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYW5ndWxhci0yLWxvY2FsLXN0b3JhZ2UuZC50cyIsInNvdXJjZXMiOlsiYW5ndWxhci0yLWxvY2FsLXN0b3JhZ2UuZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogR2VuZXJhdGVkIGJ1bmRsZSBpbmRleC4gRG8gbm90IGVkaXQuXG4gKi9cbmV4cG9ydCAqIGZyb20gJy4vaW5kZXgnO1xuZXhwb3J0IHsgTE9DQUxfU1RPUkFHRV9TRVJWSUNFX0NPTkZJRyBhcyDJtWEgfSBmcm9tICcuL2xvY2FsLXN0b3JhZ2UuY29uZmlnLmludGVyZmFjZSc7XG4iXX0=
